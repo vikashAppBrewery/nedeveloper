@@ -1,0 +1,94 @@
+#qoute-form {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px !important;
+  padding-top: 20px;
+  
+}
+
+#qoute-form label {
+  color: #222;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+#qoute-form input {
+  height: 25px;
+  width: calc(100% - 10px);
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  margin: 6px 0 20px 0;
+  padding-left: 10px;
+  outline: none;
+}
+
+#qoute-form select {
+  height: 25px;
+  width: 100%;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  margin: 6px 0 20px 0;
+  padding-left: 10px;
+  outline: none;
+}
+
+#qoute-form textarea {
+  height: 50px;
+  width: calc(100% - 10px);
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  margin: 6px 0 20px 0;
+  padding-left: 10px;
+  outline: none;
+  max-width: 100%;
+}
+
+#qoute-form input::placeholder {
+  color: #b4b4b4;
+}
+
+#qoute-form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#qoute-form button:hover {
+  background-image: -webkit-linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+  background-image: -moz-linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 800px) {
+  #signup-box {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #signup-box {
+    max-width: none;
+    width: 100%;
+    border-radius: unset;
+    box-shadow: none;
+  }
+}
+
+#simple-modal-title {
+  text-align: center;
+  font-size: 1.8em;
+}

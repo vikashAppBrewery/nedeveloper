@@ -1,0 +1,127 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    z-index: 9999;
+  }
+}
+
+@media screen and (max-width: 768px) and ( orientation: landscape) {
+  .Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    z-index: 9999;
+  }
+}
+
+
+.NavbarNavigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+.NavbarNavigation .spacer {
+  flex: 1;
+}
+.NavbarNavigation .NavbarNavigationsItems ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.NavbarNavigation .NavbarNavigationsItems ul li {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.NavbarNavigation .NavbarNavigationsItems ul li ul {
+  position: absolute;
+  left: 0;
+  background: white;
+  display: none;
+}
+
+.NavbarNavigation .NavbarNavigationsItems ul li:hover ul {
+  display: block;
+}
+
+.NavbarNavigation .NavbarNavigationsItems ul li ul li {
+  display: block;
+  width: 200px;
+}
+
+.dropdown-content li {
+  line-height: 5em;
+}
+
+.NavbarNavigation .NavbarNavigationsItems ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.NavbarNavigation .NavbarNavigationsItems ul li a:hover,
+.NavbarNavigation .NavbarNavigationsItems ul li a:active {
+  color: #fa923f;
+}
+.NavbarNavigation .NavbarLogo {
+  margin-left: 3rem;
+}
+
+.NavbarLogo a img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .NavbarLogo a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.NavbarNavigation .NavbarLogo a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .NavbarNavigationsItems {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .NavbarToggleButton {
+    display: none;
+  }
+  .Navbar .NavbarLogo {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavbarNavigation .NavbarLogo a {
+    font-size: 1.5rem;
+    background-color: white;
+  }
+}
